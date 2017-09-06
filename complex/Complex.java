@@ -49,7 +49,7 @@ public class Complex
    public Complex plusEquals( Complex c )
    {
       real += c.real;
-      imag += c.imag + 1;
+      imag += c.imag;
       return this;
    }
    
