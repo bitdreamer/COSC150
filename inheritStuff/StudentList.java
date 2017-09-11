@@ -25,9 +25,9 @@ public class StudentList
 	   String filename;
 	   Scanner in = new Scanner(System.in);
 	   
-	   
 	   System.out.print("enter file name to load : ");
 	   filename = in.nextLine();
+	   
 	   
 	   
 	   //filename = JOptionPane.showInputDialog("enter filename :");

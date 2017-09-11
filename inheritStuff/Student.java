@@ -9,7 +9,7 @@ public class Student implements StudentIF
 {
 	public int credits; // credit hours completed
 	protected String lastName;
-	protected String firstName; // switched from private, so GradStudent can inherit
+	protected String firstName; 
 	
 	public Student( int c, String ln, String fn )
 	{
@@ -36,7 +36,7 @@ public class Student implements StudentIF
 	
 	public void report()
 	{
-		System.out.println(firstName+" "+lastName+" has "+credits+" credits.");
+		System.out.println("student "+firstName+" "+lastName+" has "+credits+" credits.");
 	}
 	
 	public void setLastName ( String ln ) { lastName  = ln; }
@@ -44,5 +44,5 @@ public class Student implements StudentIF
 	
 	public String getLastName() { return lastName; }
 	public String getFirstName() { return firstName; }
-	
+	public int getCredits() { return credits;  }
 }

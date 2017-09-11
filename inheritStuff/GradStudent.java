@@ -8,11 +8,12 @@ public class GradStudent extends Student
 	protected String adviser;
 
 	// constructor, takes lastname, firstName (and sets credits to 100)
-	public GradStudent( String ln, String fn )
+	public GradStudent( String ln, String fn, String adv )
 	{
-		super( 100, "", fn ); // Grad students always start with 100 credits
+		super( 100, ln, fn ); // Grad students always start with 100 credits
 		
-	    lastName = ln; // not as good as using contructor, but ... shows access
+		adviser = adv;
+	    //lastName = ln; // not as good as using contructor, but ... shows access
 	    //firstName = "bob"; private, no access
 	}
 	
@@ -26,4 +27,14 @@ public class GradStudent extends Student
 		lastName = st.nextToken();
 		adviser = st.nextToken();
 	}
+	
+	@Override
+   public void report()
+   {
+      super.report();
+      System.out.println("adviser="+adviser );
+   }
+	
+	public String getAdviser() { return adviser; }
+
 }

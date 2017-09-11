@@ -10,18 +10,10 @@ public class Bank
 {
    protected LinkedList<Customer> customers;
    
-   // Just exercise the Bank class a little
-   public static void main( String[] args )
-   {
-      Bank b = new Bank();
-      
-   }
-      
    // constructor
    public Bank()
    {
       customers = new LinkedList<Customer>();
-      
    }
    
    // add a new bank customer with this name

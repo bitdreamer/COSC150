@@ -1,0 +1,5 @@
+student  Alex Alma 26
+student  Betty Bree 14
+grad     Carl Caw   Smith
+student yarg
+grad     Danny Dab   Swisher
