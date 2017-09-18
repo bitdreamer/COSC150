@@ -35,5 +35,13 @@ public class Art1 extends JFrame
       g.fillRect(200,200,50,50 );
       g.drawString("blah blah",300,300);
       
+      int[] x = new int[3];
+      int[] y = new int[3];
+      x[0] = 500; x[1] = 400; x[2] = 350;
+      y[0] = 350; y[1] = 150; y[2] = 400;
+      
+      g.setColor( Color.red );
+      g.fillPolygon( x, y, 3 );
+     
    }
 }

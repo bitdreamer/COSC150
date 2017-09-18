@@ -5,12 +5,13 @@ package inheritStuff;
 
 import java.util.*;
 
-public class Student implements StudentIF
+public class Student// implements StudentIF
 {
 	public int credits; // credit hours completed
 	protected String lastName;
 	protected String firstName; 
 	
+	// constructor
 	public Student( int c, String ln, String fn )
 	{
 		credits = c;

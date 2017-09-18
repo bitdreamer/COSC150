@@ -28,10 +28,6 @@ public class StudentList
 	   System.out.print("enter file name to load : ");
 	   filename = in.nextLine();
 	   
-	   
-	   
-	   //filename = JOptionPane.showInputDialog("enter filename :");
-	   
 	   students = new LinkedList<Student> (); // initialize the list
 	   try
 	   {
@@ -69,7 +65,7 @@ public class StudentList
 		   if      ( cmd.equals("student") )	{ students.add( new Student(st) ); }
 		   else if ( cmd.equals("grad"   ) ) { students.add( new GradStudent(st) ); }
 	   }
-	   catch (NoSuchElementException n) {}
+	   //catch (NoSuchElementException n) {}
 	   catch (Exception e )
 	   { System.out.println("error in this line " +e);
 	   }
