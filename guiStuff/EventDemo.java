@@ -22,7 +22,7 @@ public class EventDemo extends JFrame implements ActionListener
    public EventDemo()
    {
       setDefaultCloseOperation(EXIT_ON_CLOSE);
-      setTitle("Layout practice");
+      setTitle("dog cat button thingy");
       
       setLayout( new FlowLayout() );
       
@@ -38,6 +38,7 @@ public class EventDemo extends JFrame implements ActionListener
       setVisible(true);
    }
    
+   @Override
    public void actionPerformed( ActionEvent e )
    {
       System.out.println("you rang?");
