@@ -1,5 +1,5 @@
 // Art2.java
-// Barrett Koster for CS-212 class 2013
+// Barrett Koster 2013
 
 package guiStuff;
 

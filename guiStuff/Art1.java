@@ -1,5 +1,6 @@
 // Art1.java
-// Barrett Koster for CS-212 class 2013
+// Barrett Koster 2013
+// 2017 added triangle
 
 package guiStuff;
 

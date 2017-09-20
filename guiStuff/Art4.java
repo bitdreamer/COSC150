@@ -42,7 +42,7 @@ public class Art4 extends JFrame
    // colorGrid draws a 2d array boxes of various colors
    public void colorGrid( Graphics g )
    {
-	   for ( int i=0; i<500; i++ )
+	   for ( int i=0; i<50; i++ )
 	   {
 		   oneBox(g);
 	   }

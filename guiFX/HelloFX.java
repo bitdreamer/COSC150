@@ -2,7 +2,8 @@ package guiFX;
 
 import javafx.application.*;
 import javafx.event.*;
-import javafx.stage.Stage;
+import javafx.scene.*;
+import javafx.stage.*;
 
 public class HelloFX extends Application
 {
