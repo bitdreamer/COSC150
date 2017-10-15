@@ -53,6 +53,9 @@ public class DateServer
             PrintWriter pout = new PrintWriter( client.getOutputStream(), true);
             String writeme = new java.util.Date().toString();
             pout.println( writeme );
+            pout.flush();
+            System.out.println("server: just tried to write to client ....");
+            System.out.println("Here is what we wrote: "+writeme);
             client.close();
          }
     	 sock.close(); // is actually never called in this code

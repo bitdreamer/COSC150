@@ -18,6 +18,10 @@ import java.io.*;
 
 public class DateClient
 {
+   int port = 9001;
+   String ip = "141.161.88.4";
+   
+   
    public static void main( String[] args ) // throws IOException
    {
 	   new DateClient();
@@ -28,7 +32,9 @@ public class DateClient
 	   System.out.println("date client starting ...");
       try
       {
-         Socket sock = new Socket("localhost",5155 );
+         System.out.println("about to try to call "+ip+"/"+port);
+         //Socket sock = new Socket("localhost",5155 );
+         Socket sock = new Socket(ip,port );
          InputStream in = sock.getInputStream();
          BufferedReader bin = new BufferedReader( new InputStreamReader(in) );
          
